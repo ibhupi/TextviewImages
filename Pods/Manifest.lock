@@ -1,0 +1,20 @@
+PODS:
+  - TextviewImages (1.0.0)
+
+DEPENDENCIES:
+  - TextviewImages (from `git@github.com:ibhupi/TextviewImages.git`, branch `develop`)
+
+EXTERNAL SOURCES:
+  TextviewImages:
+    :branch: develop
+    :git: git@github.com:ibhupi/TextviewImages.git
+
+CHECKOUT OPTIONS:
+  TextviewImages:
+    :commit: 3d81e4c1127ce567b3605f53bc5d07ae3b521a01
+    :git: git@github.com:ibhupi/TextviewImages.git
+
+SPEC CHECKSUMS:
+  TextviewImages: 99d652ff75a133202549a66acfdb3725b7a63f71
+
+COCOAPODS: 0.35.0
