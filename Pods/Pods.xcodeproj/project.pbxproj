@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		215B117E940569001ACB1C90 /* Pods-TextviewImages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6639127CDF319B553EC9909 /* Pods-TextviewImages-dummy.m */; };
+		2711FE58904722F897B39EED /* Pods-TextviewImages-TextviewImages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF32A0A85EC9903D9A649495 /* Pods-TextviewImages-TextviewImages-dummy.m */; };
+		3432E2425D09C1DB248F12E8 /* UITextView+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = FC753832A2483B5BDCC66FE2 /* UITextView+Helper.h */; };
+		3B6EC84126A909691D959CF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A9D48679284AADABA27217 /* Foundation.framework */; };
+		47B7EF93BA98E6C16462192C /* UITextView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 307E78F8B4933CB63BC183F9 /* UITextView+Helper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C4819A5F87F927D8EC9511AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A9D48679284AADABA27217 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFEF205285E23E1A7722BB57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92410B94F8ED448DE4B5F520 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00037EB9ADC7F447AB42578F;
+			remoteInfo = "Pods-TextviewImages-TextviewImages";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A9D48679284AADABA27217 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		056A22DCD34A43336D362F3C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3007ED5895EDBEAA55F3F4FD /* Pods-TextviewImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextviewImages.release.xcconfig"; sourceTree = "<group>"; };
+		307E78F8B4933CB63BC183F9 /* UITextView+Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Helper.m"; path = "TextviewImagesClass/UITextView+Helper.m"; sourceTree = "<group>"; };
+		308903A4F28ADBA730556097 /* Pods-TextviewImages-TextviewImages.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextviewImages-TextviewImages.xcconfig"; sourceTree = "<group>"; };
+		4B5092B9FE890988B6284C4D /* Pods-TextviewImages-TextviewImages-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextviewImages-TextviewImages-Private.xcconfig"; sourceTree = "<group>"; };
+		541159FB36982E865CACD328 /* libPods-TextviewImages-TextviewImages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextviewImages-TextviewImages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA649903940C1EC782F452E /* Pods-TextviewImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextviewImages.debug.xcconfig"; sourceTree = "<group>"; };
+		ADE5D50C65D0E909AB4154E2 /* Pods-TextviewImages-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TextviewImages-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6639127CDF319B553EC9909 /* Pods-TextviewImages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextviewImages-dummy.m"; sourceTree = "<group>"; };
+		C8E4826D4AC622ACB728C006 /* Pods-TextviewImages-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextviewImages-acknowledgements.plist"; sourceTree = "<group>"; };
+		CCD07D0384919CCE78745EF3 /* libPods-TextviewImages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextviewImages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC972C9BE449C05D265EEEC8 /* Pods-TextviewImages-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextviewImages-resources.sh"; sourceTree = "<group>"; };
+		EDD50BC1AE0DC7F1AE9F0843 /* Pods-TextviewImages-TextviewImages-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TextviewImages-TextviewImages-prefix.pch"; sourceTree = "<group>"; };
+		EF32A0A85EC9903D9A649495 /* Pods-TextviewImages-TextviewImages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextviewImages-TextviewImages-dummy.m"; sourceTree = "<group>"; };
+		FC753832A2483B5BDCC66FE2 /* UITextView+Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+Helper.h"; path = "TextviewImagesClass/UITextView+Helper.h"; sourceTree = "<group>"; };
+		FE4F0D397C7258EDB85664A1 /* Pods-TextviewImages-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TextviewImages-environment.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F67BCD1D1177AA7AC77D738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4819A5F87F927D8EC9511AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5D36BA56E476F42E8CC5B1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6EC84126A909691D959CF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0044D65A54EA93F64D78E4F3 /* TextviewImages */ = {
+			isa = PBXGroup;
+			children = (
+				FC753832A2483B5BDCC66FE2 /* UITextView+Helper.h */,
+				307E78F8B4933CB63BC183F9 /* UITextView+Helper.m */,
+				1FC59D764BFA8957C855EBC8 /* Support Files */,
+			);
+			name = TextviewImages;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		039AE031A54FBCACC4842FA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCD07D0384919CCE78745EF3 /* libPods-TextviewImages.a */,
+				541159FB36982E865CACD328 /* libPods-TextviewImages-TextviewImages.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FC59D764BFA8957C855EBC8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				308903A4F28ADBA730556097 /* Pods-TextviewImages-TextviewImages.xcconfig */,
+				4B5092B9FE890988B6284C4D /* Pods-TextviewImages-TextviewImages-Private.xcconfig */,
+				EF32A0A85EC9903D9A649495 /* Pods-TextviewImages-TextviewImages-dummy.m */,
+				EDD50BC1AE0DC7F1AE9F0843 /* Pods-TextviewImages-TextviewImages-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/Pods-TextviewImages-TextviewImages";
+			sourceTree = "<group>";
+		};
+		61721AA5E6340EA3BFD004C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89DE04955C6105A894CFF2C3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89DE04955C6105A894CFF2C3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				01A9D48679284AADABA27217 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9D48DBA07274E408C0F6E9B1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3BAAD033FD7ADED246A3533 /* Pods-TextviewImages */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A3BAAD033FD7ADED246A3533 /* Pods-TextviewImages */ = {
+			isa = PBXGroup;
+			children = (
+				ADE5D50C65D0E909AB4154E2 /* Pods-TextviewImages-acknowledgements.markdown */,
+				C8E4826D4AC622ACB728C006 /* Pods-TextviewImages-acknowledgements.plist */,
+				B6639127CDF319B553EC9909 /* Pods-TextviewImages-dummy.m */,
+				FE4F0D397C7258EDB85664A1 /* Pods-TextviewImages-environment.h */,
+				EC972C9BE449C05D265EEEC8 /* Pods-TextviewImages-resources.sh */,
+				ACA649903940C1EC782F452E /* Pods-TextviewImages.debug.xcconfig */,
+				3007ED5895EDBEAA55F3F4FD /* Pods-TextviewImages.release.xcconfig */,
+			);
+			name = "Pods-TextviewImages";
+			path = "Target Support Files/Pods-TextviewImages";
+			sourceTree = "<group>";
+		};
+		CEC931E9E28AED62F20F8CDC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0044D65A54EA93F64D78E4F3 /* TextviewImages */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F7F6DF998B20063C879E39D7 = {
+			isa = PBXGroup;
+			children = (
+				056A22DCD34A43336D362F3C /* Podfile */,
+				CEC931E9E28AED62F20F8CDC /* Development Pods */,
+				61721AA5E6340EA3BFD004C6 /* Frameworks */,
+				039AE031A54FBCACC4842FA7 /* Products */,
+				9D48DBA07274E408C0F6E9B1 /* Targets Support Files */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E702720650F49983BC9AF79B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3432E2425D09C1DB248F12E8 /* UITextView+Helper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00037EB9ADC7F447AB42578F /* Pods-TextviewImages-TextviewImages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91964142CCBA3C84EF08AB8E /* Build configuration list for PBXNativeTarget "Pods-TextviewImages-TextviewImages" */;
+			buildPhases = (
+				FAF0A5CC6CD2326166FE1BAC /* Sources */,
+				D5D36BA56E476F42E8CC5B1C /* Frameworks */,
+				E702720650F49983BC9AF79B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TextviewImages-TextviewImages";
+			productName = "Pods-TextviewImages-TextviewImages";
+			productReference = 541159FB36982E865CACD328 /* libPods-TextviewImages-TextviewImages.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1216B411154DAB5870D3CDAD /* Pods-TextviewImages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7093B92FC9F58C0FE965C57E /* Build configuration list for PBXNativeTarget "Pods-TextviewImages" */;
+			buildPhases = (
+				E01B66A6AD6B68118B3AEEAE /* Sources */,
+				5F67BCD1D1177AA7AC77D738 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0318A2B52016E0EBD0313092 /* PBXTargetDependency */,
+			);
+			name = "Pods-TextviewImages";
+			productName = "Pods-TextviewImages";
+			productReference = CCD07D0384919CCE78745EF3 /* libPods-TextviewImages.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92410B94F8ED448DE4B5F520 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 518FC990CE17B0A83348A74F /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F7F6DF998B20063C879E39D7;
+			productRefGroup = 039AE031A54FBCACC4842FA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1216B411154DAB5870D3CDAD /* Pods-TextviewImages */,
+				00037EB9ADC7F447AB42578F /* Pods-TextviewImages-TextviewImages */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E01B66A6AD6B68118B3AEEAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				215B117E940569001ACB1C90 /* Pods-TextviewImages-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0A5CC6CD2326166FE1BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2711FE58904722F897B39EED /* Pods-TextviewImages-TextviewImages-dummy.m in Sources */,
+				47B7EF93BA98E6C16462192C /* UITextView+Helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0318A2B52016E0EBD0313092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TextviewImages-TextviewImages";
+			target = 00037EB9ADC7F447AB42578F /* Pods-TextviewImages-TextviewImages */;
+			targetProxy = FFEF205285E23E1A7722BB57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E82904993A48E1D909BFD17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46834396BB2D6AAD990683A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACA649903940C1EC782F452E /* Pods-TextviewImages.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1FE00B4D336DE652518BFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5092B9FE890988B6284C4D /* Pods-TextviewImages-TextviewImages-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TextviewImages-TextviewImages/Pods-TextviewImages-TextviewImages-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BDF4E3437C21588F3992EA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C4C0CE42CA1A1766AD71330C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3007ED5895EDBEAA55F3F4FD /* Pods-TextviewImages.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3E4D2CEE4266632145B1B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5092B9FE890988B6284C4D /* Pods-TextviewImages-TextviewImages-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TextviewImages-TextviewImages/Pods-TextviewImages-TextviewImages-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		518FC990CE17B0A83348A74F /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF4E3437C21588F3992EA03 /* Debug */,
+				3E82904993A48E1D909BFD17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7093B92FC9F58C0FE965C57E /* Build configuration list for PBXNativeTarget "Pods-TextviewImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46834396BB2D6AAD990683A4 /* Debug */,
+				C4C0CE42CA1A1766AD71330C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91964142CCBA3C84EF08AB8E /* Build configuration list for PBXNativeTarget "Pods-TextviewImages-TextviewImages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1FE00B4D336DE652518BFD3 /* Debug */,
+				E3E4D2CEE4266632145B1B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92410B94F8ED448DE4B5F520 /* Project object */;
+}

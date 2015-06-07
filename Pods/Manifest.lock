@@ -1,0 +1,14 @@
+PODS:
+  - TextviewImages (1.0.0)
+
+DEPENDENCIES:
+  - TextviewImages (from `./TextviewImages.podspec`)
+
+EXTERNAL SOURCES:
+  TextviewImages:
+    :path: ./TextviewImages.podspec
+
+SPEC CHECKSUMS:
+  TextviewImages: 99d652ff75a133202549a66acfdb3725b7a63f71
+
+COCOAPODS: 0.35.0

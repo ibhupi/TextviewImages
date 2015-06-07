@@ -32,6 +32,25 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
     return objc_getAssociatedObject(self, ImagePickerControllerPropertyKey);
 }
 
+- (NSArray *)attachedImages
+{
+    NSMutableArray *images = [NSMutableArray new];
+    if (self.textStorage.length)
+    {
+        [self.textStorage enumerateAttribute:NSAttachmentAttributeName
+                                              inRange:NSMakeRange(0, self.textStorage.length)
+                                              options:0
+                                           usingBlock:^(id value, NSRange range, BOOL *stop) {
+                                               NSTextAttachment* attachment = (NSTextAttachment*)value;
+                                               if (attachment.image)
+                                               {
+                                                   [images addObject:attachment.image];
+                                               }
+                                           }];
+    }
+    return images;
+}
+
 - (void)_addSelectImageMenuText:(NSString *)selectImageMenuText
 {
     if (!selectImageMenuText.length)
@@ -110,33 +129,6 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
     self.imagePickerController = imagePickerController;
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    [self _informDelegateWillHidePicker];
-    if (!info)
-    {
-        [picker dismissViewControllerAnimated:YES completion:^{
-            [self _informDelegateDidHidePicker];
-        }];
-        return;
-    }
-    UIImage *image = info[UIImagePickerControllerEditedImage];
-    [picker dismissViewControllerAnimated:YES completion:^{
-        [self _imageSelected:image];
-        [self becomeFirstResponder];
-        [self _informDelegateDidHidePicker];
-    }];
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
-    [self _informDelegateWillHidePicker];
-    [picker dismissViewControllerAnimated:YES completion:^{
-        [self _informDelegateDidHidePicker];
-    }];
-    [self becomeFirstResponder];
-}
-
 - (void)_imageSelected:(UIImage *)image
 {
     [self _addImage:image];
@@ -161,8 +153,8 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
     self.font = font;
     if ((textRange.location + textRange.length) >= (self.text.length-1))
     {
-        [self _appendString:@"\n\n" locationIndex:-1];
-        self.selectedRange = NSMakeRange(textRange.location + 3, 0);
+        [self _appendString:@"\n" locationIndex:-1];
+        self.selectedRange = NSMakeRange(textRange.location + 2, 0);
     }
     else
     {
@@ -240,6 +232,34 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
     }
 }
 
+#pragma mark - UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    [self _informDelegateWillHidePicker];
+    if (!info)
+    {
+        [picker dismissViewControllerAnimated:YES completion:^{
+            [self _informDelegateDidHidePicker];
+        }];
+        return;
+    }
+    UIImage *image = info[UIImagePickerControllerEditedImage];
+    [picker dismissViewControllerAnimated:YES completion:^{
+        [self _imageSelected:image];
+        [self becomeFirstResponder];
+        [self _informDelegateDidHidePicker];
+    }];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self _informDelegateWillHidePicker];
+    [picker dismissViewControllerAnimated:YES completion:^{
+        [self _informDelegateDidHidePicker];
+    }];
+    [self becomeFirstResponder];
+}
 
 #pragma mark - UIAlertViewDelegate
 
