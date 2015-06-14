@@ -9,6 +9,8 @@
 #import "UITextView+Helper.h"
 #import <objc/runtime.h>
 
+#define  IsiPhone() (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
 static void *ImagePickerControllerPropertyKey = &ImagePickerControllerPropertyKey;
 
 static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelegatePropertyKey;
@@ -38,15 +40,15 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
     if (self.textStorage.length)
     {
         [self.textStorage enumerateAttribute:NSAttachmentAttributeName
-                                              inRange:NSMakeRange(0, self.textStorage.length)
-                                              options:0
-                                           usingBlock:^(id value, NSRange range, BOOL *stop) {
-                                               NSTextAttachment* attachment = (NSTextAttachment*)value;
-                                               if (attachment.image)
-                                               {
-                                                   [images addObject:attachment.image];
-                                               }
-                                           }];
+                                     inRange:NSMakeRange(0, self.textStorage.length)
+                                     options:0
+                                  usingBlock:^(id value, NSRange range, BOOL *stop) {
+                                      NSTextAttachment* attachment = (NSTextAttachment*)value;
+                                      if (attachment.image)
+                                      {
+                                          [images addObject:attachment.image];
+                                      }
+                                  }];
     }
     return images;
 }
@@ -62,7 +64,7 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
     NSMutableArray *menuItems = [NSMutableArray new];
     if (selectImageMenuText.length)
     {
-        UIMenuItem *menuItem = [[UIMenuItem alloc] initWithTitle:selectImageMenuText action:@selector(_selectImageWithAlertForGalleryOrCamera:)];
+        UIMenuItem *menuItem = [[UIMenuItem alloc] initWithTitle:selectImageMenuText action:@selector(selectImageWithAlertForGalleryOrCamera:)];
         [menuItems addObject:menuItem];
     }
     [menuController setMenuItems:menuItems];
@@ -70,7 +72,7 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
 
 
 - (void)_addSelectImageMenuText:(NSString *)selectImageMenuText
-                cameraMenuText:(NSString *)cameraMenuText
+                 cameraMenuText:(NSString *)cameraMenuText
 {
     if (!selectImageMenuText.length && !cameraMenuText.length)
     {
@@ -95,7 +97,7 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
     });
 }
 
-- (void)_selectImageWithAlertForGalleryOrCamera:(id)sender
+- (void)selectImageWithAlertForGalleryOrCamera:(id)sender
 {
     [self resignFirstResponder];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Select Image Source" message:@"Please select image source" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Photos", @"Camera", nil];
@@ -105,7 +107,7 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
 - (void)_selectImageFromGallery:(id)sender
 {
     [self resignFirstResponder];
-    [self _showImagePickerForImagePickerControllerSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    [self _showImagePickerForImagePickerControllerSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
 }
 
 - (void)_selectImageFromCamera:(id)sender
@@ -117,10 +119,10 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
 - (void)_showImagePickerForImagePickerControllerSourceType:(UIImagePickerControllerSourceType)imagePickerSourceType
 {
     [self _informDelegateWillShowPicker];
-
+    
     UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
     imagePickerController.delegate = self;
-    imagePickerController.allowsEditing = YES;
+    imagePickerController.allowsEditing = IsiPhone();
     imagePickerController.sourceType = imagePickerSourceType;
     UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
     [rootViewController presentViewController:imagePickerController animated:YES completion:^{
@@ -245,6 +247,11 @@ static void *TextViewImagePickerDelegatePropertyKey = &TextViewImagePickerDelega
         return;
     }
     UIImage *image = info[UIImagePickerControllerEditedImage];
+    if (!image)
+    {
+        image = info[UIImagePickerControllerOriginalImage];
+    }
+
     [picker dismissViewControllerAnimated:YES completion:^{
         [self _imageSelected:image];
         [self becomeFirstResponder];
