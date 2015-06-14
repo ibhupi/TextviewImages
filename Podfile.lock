@@ -2,12 +2,11 @@ PODS:
   - TextviewImages (1.0.0)
 
 DEPENDENCIES:
-  - TextviewImages (from `git@github.com:ibhupi/TextviewImages.git`, branch `develop`)
+  - TextviewImages (from `./TextviewImages.podspec`)
 
 EXTERNAL SOURCES:
   TextviewImages:
-    :branch: develop
-    :git: git@github.com:ibhupi/TextviewImages.git
+    :path: ./TextviewImages.podspec
 
 CHECKOUT OPTIONS:
   TextviewImages:

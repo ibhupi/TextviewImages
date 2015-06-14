@@ -14,6 +14,11 @@
 @interface UITextView (Helper)
 
 /**
+ * Client can set this imagePickerDelegate to listen various TextViewImagePickerDelegate protocols
+ */
+@property (nonatomic, assign) id<TextViewImagePickerDelegate> imagePickerDelegate;
+
+/**
  * Add menu item option to select image. 
  * When user will tap on this it will ask user to select image source as camera roll or camera.
  * @param selectImageMenuText, NSString menu text to show option to select image
@@ -31,14 +36,15 @@
                 cameraMenuText:(NSString *)cameraMenuText;
 
 /**
- * Client can set this imagePickerDelegate to listen various TextViewImagePickerDelegate protocols
- */
-@property (nonatomic, assign) id<TextViewImagePickerDelegate> imagePickerDelegate;
-
-/**
  * Get list of attached images in text view.
  */
 - (NSArray *)attachedImages;
+
+/**
+ * Additional method to trigger image selection alert manually.
+ * After image selection, image will be place at current location of cursor.
+ */
+- (void)selectImageWithAlertForGalleryOrCamera:(id)sender;
 
 @end
 
