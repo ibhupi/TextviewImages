@@ -1,8 +1,8 @@
-# TextviewImages
-Textview Images is a Category on textview that enables functionality of selecting images in textview.
+# UITextview Images
+UITextview Images is a Category on textview that enables functionality of selecting images in textview.
 
 
-# TextviewImages Example 
+# UITextview Images Example 
 Download this project and run it to see how easy it is to do that.
 
 # Usage Podfile
